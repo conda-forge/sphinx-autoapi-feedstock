@@ -5,11 +5,13 @@ Home: http://github.com/rtfd/sphinx-autoapi
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sphinx-autoapi-feedstock/blob/master/LICENSE.txt)
 
 Summary: Sphinx auto API documentation generator
 
+Development: https://github.com/rtfd/sphinx-autoapi
 
+Documentation: http://sphinx-autoapi.readthedocs.io/en/latest/
 
 Current build status
 ====================
