@@ -20,9 +20,9 @@ requirements:
     - pip
   run:
     - python
-    - astroid
+    - astroid >= 2.4
     - pyyaml
-    - sphinx
+    - sphinx >= 3.0
     - sphinxcontrib-golangdomain
     - sphinxcontrib-dotnetdomain
     - unidecode
