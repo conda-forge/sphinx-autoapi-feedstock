@@ -20,7 +20,8 @@ requirements:
     - pip
   run:
     - python >=3.6
-    - astroid >=2.4
+    - astroid >=2.7
+    - jinja2
     - pyyaml
     - sphinx >=3.0
     - sphinxcontrib-golangdomain
