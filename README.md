@@ -1,11 +1,11 @@
-About sphinx-autoapi
-====================
+About sphinx-autoapi-feedstock
+==============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sphinx-autoapi-feedstock/blob/main/LICENSE.txt)
 
 Home: http://github.com/rtfd/sphinx-autoapi
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sphinx-autoapi-feedstock/blob/main/LICENSE.txt)
 
 Summary: Sphinx auto API documentation generator
 
