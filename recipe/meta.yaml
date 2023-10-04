@@ -20,13 +20,13 @@ requirements:
     - pip
   run:
     - python >=3.6
+    - anyascii
     - astroid >=2.7
     - jinja2
     - pyyaml
     - sphinx >=3.0
     - sphinxcontrib-golangdomain
     - sphinxcontrib-dotnetdomain
-    - unidecode
 
 test:
   requires:
