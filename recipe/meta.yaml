@@ -1,5 +1,5 @@
 {% set name = "sphinx-autoapi" %}
-{% set version = "2.1.0" %}
+{% set version = "3.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 5b5c58064214d5a846c9c81d23f00990a64654b9bca10213231db54a241bc50f
+  sha256: 09ebd674a32b44467222b0fb8a917b97c89523f20dbf05b52cb8a3f0e15714de
 
 build:
   noarch: python
@@ -16,22 +16,17 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.8
     - pip
   run:
-    - python >=3.6
+    - python >=3.8
     - astroid >=2.7
     - jinja2
     - pyyaml
-    - sphinx >=3.0
-    - sphinxcontrib-golangdomain
-    - sphinxcontrib-dotnetdomain
-    - unidecode
+    - sphinx >=6.1.0
+    - anyascii
 
 test:
-  requires:
-    - pydocstyle
-    - salvus_mesher_lite  # [osx]
   imports:
     - autoapi
 
@@ -47,3 +42,4 @@ about:
 extra:
   recipe-maintainers:
     - CurtLH
+    - ChrisBarker-NOAA
