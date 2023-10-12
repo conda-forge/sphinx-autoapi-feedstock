@@ -27,9 +27,6 @@ requirements:
     - anyascii
 
 test:
-  # requires:
-  #   - pydocstyle
-  #   - salvus_mesher_lite  # [osx]
   imports:
     - autoapi
 
@@ -45,3 +42,4 @@ about:
 extra:
   recipe-maintainers:
     - CurtLH
+    - ChrisBarker-NOAA
