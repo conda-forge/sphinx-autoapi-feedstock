@@ -1,13 +1,13 @@
 {% set name = "sphinx-autoapi" %}
-{% set version = "3.0.0" %}
+{% set version = "3.1.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 09ebd674a32b44467222b0fb8a917b97c89523f20dbf05b52cb8a3f0e15714de
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: b5f6e3c61cd86c0cdb7ee77a9d580c0fd116726c5b29cdcb1f1d5f30a5bca1bd
 
 build:
   noarch: python
