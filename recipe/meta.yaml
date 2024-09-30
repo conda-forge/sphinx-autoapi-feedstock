@@ -16,15 +16,15 @@ build:
 
 requirements:
   host:
-    - python >=3.9
+    - python >=3.8
+    - setuptools >=46.4.0
     - pip
   run:
-    - python >=3.9
+    - python >=3.8
     - astroid >=2.7
     - jinja2
     - pyyaml
     - sphinx >=6.1.0
-    - anyascii
 
 test:
   imports:
