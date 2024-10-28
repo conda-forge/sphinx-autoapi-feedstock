@@ -17,11 +17,12 @@ build:
 requirements:
   host:
     - python >=3.8
-    - setuptools >=46.4.0
     - pip
+    - flit-core >=3.2,<4
   run:
     - python >=3.8
-    - astroid >=2.7
+    - astroid >=2.7  #[py<312]
+    - astroid >=3.0  #[py>=312]
     - jinja2
     - pyyaml
     - sphinx >=6.1.0
