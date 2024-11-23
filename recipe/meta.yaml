@@ -6,27 +6,30 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
   sha256: c44fd719580e9a3684ff82019f4f7f39fc970e3030ffd325936654a6f4d31f22
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
     - flit-core >=3.2,<4
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - astroid >=3.0
     - jinja2
     - pyyaml
     - sphinx >=6.1.0
+    - stdlib-list
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - autoapi
 
