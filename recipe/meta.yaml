@@ -1,5 +1,5 @@
 {% set name = "sphinx-autoapi" %}
-{% set version = "3.3.3" %}
+{% set version = "3.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: c44fd719580e9a3684ff82019f4f7f39fc970e3030ffd325936654a6f4d31f22
+  sha256: e6d5371f9411bbb9fca358c00a9e57aef3ac94cbfc5df4bab285946462f69e0c
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
@@ -21,7 +21,7 @@ requirements:
     - flit-core >=3.2,<4
   run:
     - python >={{ python_min }}
-    - astroid >=3.0
+    - astroid >=2.7
     - jinja2
     - pyyaml
     - sphinx >=6.1.0

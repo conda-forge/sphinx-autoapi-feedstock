@@ -151,4 +151,5 @@ Feedstock Maintainers
 * [@CurtLH](https://github.com/CurtLH/)
 * [@bjlittle](https://github.com/bjlittle/)
 * [@honnorat](https://github.com/honnorat/)
+* [@timkpaine](https://github.com/timkpaine/)
 
